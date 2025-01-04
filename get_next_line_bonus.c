@@ -12,7 +12,7 @@
 
 #include "get_next_line_bonus.h"
 
-char	*ft_read(char *rd, int fd)
+static char	*ft_read(char *rd, int fd)
 {
 	ssize_t		num_rd;
 	char		*buffer;
@@ -40,7 +40,7 @@ char	*ft_read(char *rd, int fd)
 	return (rd);
 }
 
-char	*ft_line(char *rd)
+static char	*ft_line(char *rd)
 {
 	int		i;
 	char	*line;
@@ -58,7 +58,7 @@ char	*ft_line(char *rd)
 	return (line);
 }
 
-char	*ft_rest(char *rd)
+static char	*ft_rest(char *rd)
 {
 	char	*str;
 	int		i;
